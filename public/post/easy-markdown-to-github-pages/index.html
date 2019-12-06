@@ -1,96 +1,111 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="generator" content="Hugo 0.53" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/style.css" type="text/css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
-<link rel="alternate" href="/index.xml" type="application/rss+xml" title="Hugo 101">
-<title>How to convert GitHub Markdown files to a simple website - Hugo 101</title>
-</head>
-<body>
+<html lang="en">
 
-<header>
-  <div class="container clearfix">
-    <a class="path" href="https://hugo101.netlify.com/">[Hugo 101]</a>
-    <span class="caret"># _</span>
-    <div class="right">
-      
-    </div>
-  </div>
-</header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="container">
-
-
-<main role="main" class="article">
-  
-<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="meta">
-
-    <span class="key">published on</span>
-    <span class="val"><time itemprop="datePublished" datetime="2019-03-18">March 18, 2019</time></span>
-
-
-    <span class="key">in</span>
-    <span class="val">
-
-        <a href="/categories/github">github</a>
-
-        <a href="/categories/markdown">markdown</a>
-
-    </span>
-
-
-    <br>
-    <span class="key">tags:</span>
-    <span class="val">
-
-        <a href="/tags/markdown">markdown</a>
-
-        <a href="/tags/GitHub">GitHub</a>
-
-        <a href="/tags/website">website</a>
-
-    </span>
-
-  </div>
-  <h1 class="headline" itemprop="headline">How to convert GitHub Markdown files to a simple website</h1>
-  <section class="body" itemprop="articleBody">
+    
+    
     
 
-<h3 id="easy-markdown-to-github-pages">Easy Markdown to GitHub Pages</h3>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to convert GitHub Markdown files to a simple website"/>
+<meta name="twitter:description" content="Easy Markdown to GitHub Pages Introduction This little guide demonstrates how to turn any Github repository with a bunch of Markdown files into a simple website using Github Pages and Jekyll.
+ You don&#39;t need to use the command line or anything other than your browser. It doesn&#39;t require any knowledge in Jekyll. It&#39;s completely compatible with any bunch of markdown files you already have in any existing repository without any modification to those files."/>
 
+    <meta property="og:title" content="How to convert GitHub Markdown files to a simple website" />
+<meta property="og:description" content="Easy Markdown to GitHub Pages Introduction This little guide demonstrates how to turn any Github repository with a bunch of Markdown files into a simple website using Github Pages and Jekyll.
+ You don&#39;t need to use the command line or anything other than your browser. It doesn&#39;t require any knowledge in Jekyll. It&#39;s completely compatible with any bunch of markdown files you already have in any existing repository without any modification to those files." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.descalo.com/post/easy-markdown-to-github-pages/" />
+<meta property="article:published_time" content="2019-03-18T07:13:19+01:00" />
+<meta property="article:modified_time" content="2019-03-18T07:13:19+01:00" />
+
+
+    
+      <base href="https://www.descalo.com/post/easy-markdown-to-github-pages/">
+    
+    <title>
+  How to convert GitHub Markdown files to a simple website · Boaz Descalo
+</title>
+
+    
+      <link rel="canonical" href="https://www.descalo.com/post/easy-markdown-to-github-pages/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="https://www.descalo.com/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.descalo.com/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.60.1" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Boaz Descalo
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>How to convert GitHub Markdown files to a simple website</h1>
+    </header>
+
+    <h3 id="easy-markdown-to-github-pages">Easy Markdown to GitHub Pages</h3>
 <h3 id="introduction">Introduction</h3>
-
 <p>This little guide demonstrates how to turn any <a href="https://github.com/">Github</a>
 repository with a bunch of <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>
 files into a simple website using <a href="https://pages.github.com/">Github Pages</a> and
 <a href="https://jekyllrb.com/">Jekyll</a>.</p>
-
 <ul>
-<li>You don&rsquo;t need to use the command line or anything other than your browser.</li>
-<li>It doesn&rsquo;t require any knowledge in Jekyll.</li>
-<li>It&rsquo;s completely compatible with any bunch of markdown files you already have in
+<li>You don't need to use the command line or anything other than your browser.</li>
+<li>It doesn't require any knowledge in Jekyll.</li>
+<li>It's completely compatible with any bunch of markdown files you already have in
 any existing repository without any modification to those files. That includes
 the basic <code>README.md</code>almost all repositories contain.</li>
 <li>The markdown files will remain just as readable and usable in Github than in
 your website.</li>
 </ul>
-
 <h3 id="step-by-step-instructions">Step by step instructions</h3>
-
 <h3 id="determine-the-repository-where-you-want-to-activate-github-pages">Determine the repository where you want to activate GitHub Pages</h3>
-
 <p>You can of course create a new repository if you want.</p>
-
-<h3 id="create-the-config-yml-file">Create the <code>_.config.yml</code> file</h3>
-
+<h3 id="create-the-configyml-file">Create the <code>_.config.yml</code> file</h3>
 <p>That file should be created on the root of your repository. Here is some content
 to copy-paste in it:</p>
-
 <pre><code>plugins:
   - jekyll-relative-links
 relative_links:
@@ -105,83 +120,71 @@ include:
   - CONTRIBUTING.md
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
-</code></pre>
-
-<p>It&rsquo;s basically just a few tuning of GitHub Pages default configuration to have
+</code></pre><p>It's basically just a few tuning of GitHub Pages default configuration to have
 a better handling of Markdown files.</p>
-
 <h3 id="activate-github-pages-in-your-repository-configuration">Activate GitHub Pages in your repository configuration</h3>
-
 <p>On the GitHub page of your project go into <code>Settings &gt; Options &gt; Github Pages</code>:</p>
-
-<p><img src="https://cdn-images-1.medium.com/max/880/0*eZBV54NOulDlzKy8.png" alt="" /></p>
-
+<p><img src="https://cdn-images-1.medium.com/max/880/0*eZBV54NOulDlzKy8.png" alt=""></p>
 <p>In the <code>Source</code> option, select <code>master branch</code> then <code>Save</code>:</p>
-
-<p><img src="https://cdn-images-1.medium.com/max/880/0*H972YMaFG9Gfiolm.png" alt="" /></p>
-
+<p><img src="https://cdn-images-1.medium.com/max/880/0*H972YMaFG9Gfiolm.png" alt=""></p>
 <p>You must also choose a theme:</p>
-
-<p><img src="https://cdn-images-1.medium.com/max/880/0*zdXm2jwli-YMIBAh.png" alt="" /></p>
-
-<p>That&rsquo;s it! Now you can just use the link provided by GitHub to access you
+<p><img src="https://cdn-images-1.medium.com/max/880/0*zdXm2jwli-YMIBAh.png" alt=""></p>
+<p>That's it! Now you can just use the link provided by GitHub to access you
 website:</p>
-
 <pre><code>Your site is published at https://bolajiayodeji.github.io/xxxxxx/
 </code></pre>
-
 <h3 id="usage-guide">Usage guide</h3>
-
 <ul>
 <li>Any markdown file in your repository will display in your GitHub Pages website.
 You just have to use the same path to access it and replace the <code>.md</code> extension
 by <code>.html</code>.</li>
 </ul>
-
 <p>So if you want to display your <code>README.md</code> file, you have to enter the URL as
 <code>README.html</code></p>
-
 <ul>
 <li>To make links between your Markdown files just use a relative path to the other
 Markdown file. The configuration you copy pasted in your <code>_config.yml</code> provides
 a plugin to convert those URLs.</li>
 </ul>
-
 <p>So your Markdown files will have correct links both in GitHub and GitHub Pages.</p>
-
 <ul>
 <li>The index page of your website can be a <code>index.md</code> file or a <code>README.md</code> file.
 If both exists the <code>index.md</code> file has priority.</li>
 <li>You should be able to use any <a href="https://guides.github.com/features/mastering-markdown/">GitHub Flavored
 Markdown</a>.</li>
 </ul>
-
 <h3 id="known-differences-between-github-and-github-pages">Known differences between GitHub and GitHub Pages</h3>
-
 <ul>
 <li>No automatic links with GitHub Pages. The GitHub Markdown renderer can
 automatically detect a simple copy-pasted link and make it a clickable link.
-GitHub Pages doesn&rsquo;t propose a feature to reproduce that behavior, so you&rsquo;ll
+GitHub Pages doesn't propose a feature to reproduce that behavior, so you'll
 have to braces your links with the <code>[]()</code>syntax.</li>
 </ul>
+<h1 id="subscribe-for-my-newsletter-herehttpseepurlcomgeccfl-and-get-notified-when-i-write-something-cool">Subscribe for my Newsletter <a href="https://eepurl.com/geCCfL">here</a> and get notified when I write something cool.</h1>
+<p><img src="https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png" alt="thewebdev"></p>
 
-<h1 id="subscribe-for-my-newsletter-here-https-eepurl-com-geccfl-and-get-notified-when-i-write-something-cool">Subscribe for my Newsletter <a href="https://eepurl.com/geCCfL">here</a> and get notified when I write something cool.</h1>
+  </article>
+</section>
 
-<p><img src="https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png" alt="thewebdev" /></p>
 
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+     © 2019
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
   </section>
-</article>
-
-</main>
-
-</div>
-
-<footer>
-  <div class="container">
-    <span class="copyright">&copy; 2019 Hugo 101 - <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
-  </div>
 </footer>
 
-</body>
-</html>
+    </main>
 
+    
+
+  </body>
+
+</html>
