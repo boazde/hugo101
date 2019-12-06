@@ -3,52 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.descalo.com/categories/base16/</loc>
-    <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.descalo.com/</loc>
     <lastmod>2019-03-18T07:13:19+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.descalo.com/categories/</loc>
-    <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.descalo.com/tags/first-post/</loc>
-    <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.descalo.com/tags/github/</loc>
-    <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.descalo.com/categories/github/</loc>
-    <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.descalo.com/post/easy-markdown-to-github-pages/</loc>
-    <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.descalo.com/categories/hugo/</loc>
-    <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.descalo.com/tags/markdown/</loc>
-    <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.descalo.com/categories/markdown/</loc>
     <lastmod>2019-03-18T07:13:19+01:00</lastmod>
   </url>
   
@@ -63,13 +23,7 @@
   </url>
   
   <url>
-    <loc>https://www.descalo.com/tags/</loc>
-    <lastmod>2019-03-18T07:13:19+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.descalo.com/tags/website/</loc>
-    <lastmod>2019-03-18T07:13:19+01:00</lastmod>
+    <loc>https://www.descalo.com/series/</loc>
   </url>
   
 </urlset>
